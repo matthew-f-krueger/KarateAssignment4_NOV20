@@ -189,6 +189,7 @@
     <Content Include="Global.asax" />
     <Content Include="KarateInstructors\instructorpage.aspx" />
     <Content Include="KarateMembers\memberpage.aspx" />
+    <Content Include="Logon.aspx" />
     <Content Include="obj\Debug\KarateAssignment4.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\KarateAssignment4.dll" />
     <Content Include="obj\Debug\KarateAssignment4.pdb" />
@@ -244,6 +245,8 @@
     <Content Include="packages\bootstrap.5.2.3\content\Scripts\bootstrap.min.js" />
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
+    <Content Include="KarateInstructors\Web.config" />
+    <Content Include="KarateMembers\Web.config" />
     <None Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1-vsdoc.js" />
     <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.js" />
     <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.min.js" />
@@ -623,6 +626,13 @@
     </Compile>
     <Compile Include="KarateMembers\memberpage.aspx.designer.cs">
       <DependentUpon>memberpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.aspx.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logon.aspx.designer.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
     </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

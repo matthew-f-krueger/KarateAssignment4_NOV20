@@ -123,11 +123,6 @@ C:\Users\Luke Thompson\Source\Repos\KarateAssignment4_NOV20\bin\roslyn\vbc.exe.c
 C:\Users\Luke Thompson\Source\Repos\KarateAssignment4_NOV20\bin\roslyn\vbc.rsp
 C:\Users\Luke Thompson\Source\Repos\KarateAssignment4_NOV20\bin\roslyn\VBCSCompiler.exe
 C:\Users\Luke Thompson\Source\Repos\KarateAssignment4_NOV20\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Luke Thompson\Source\Repos\KarateAssignment4_NOV20\bin\System.Web.Optimization.xml
-C:\Users\Luke Thompson\Source\Repos\KarateAssignment4_NOV20\bin\Newtonsoft.Json.xml
-C:\Users\Luke Thompson\Source\Repos\KarateAssignment4_NOV20\bin\Antlr3.Runtime.pdb
-C:\Users\Luke Thompson\Source\Repos\KarateAssignment4_NOV20\bin\Microsoft.AspNet.FriendlyUrls.xml
-C:\Users\Luke Thompson\Source\Repos\KarateAssignment4_NOV20\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Luke Thompson\Source\Repos\KarateAssignment4_NOV20\obj\Debug\KarateAssignment4.csproj.AssemblyReference.cache
 C:\Users\Luke Thompson\Source\Repos\KarateAssignment4_NOV20\obj\Debug\KarateAssignment4.csproj.CoreCompileInputs.cache
 C:\Users\Luke Thompson\Source\Repos\KarateAssignment4_NOV20\obj\Debug\KarateAssignment4.csproj.CopyComplete
