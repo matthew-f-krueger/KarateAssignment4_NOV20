@@ -38,7 +38,18 @@ namespace KarateAssignment4
                 if (HttpContext.Current.Session["userType"].ToString() == "Member")
                 {
                     Member member = (from x in dbcon.Members where x.Member_UserID == myUser.UserID select x).First();
+                    HttpContext.Current.Session["memberLast"] = member.MemberLastName;
+                    HttpContext.Current.Session["memberFirst"] = member.MemberFirstName;
 
+                }
+                if (HttpContext.Current.Session["userType"].ToString() == "Instructor")
+                {
+                    Instructor member = (from x in dbcon.Instructors where x.InstructorID == myUser.UserID select x).First();
+                    HttpContext.Current.Session["memberLast"] = member.InstructorLastName;
+                    HttpContext.Current.Session["memberFirst"] = member.InstructorFirstName;
+                    Section section = (from x in dbcon.Sections where x.Instructor_ID == myUser.UserID select x).First();
+                    HttpContext.Current.Session["sectionName"] = section.SectionName;
+                    HttpContext.Current.Session["sectionMemberID"] = section.Member_ID;
                 }
             }
             if (myUser != null && HttpContext.Current.Session["userType"].ToString() == "Member")
