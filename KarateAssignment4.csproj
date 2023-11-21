@@ -247,6 +247,7 @@
     <Content Include=".gitignore" />
     <Content Include="KarateInstructors\Web.config" />
     <Content Include="KarateMembers\Web.config" />
+    <Content Include="Administrators\Web.config" />
     <None Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1-vsdoc.js" />
     <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.js" />
     <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.min.js" />

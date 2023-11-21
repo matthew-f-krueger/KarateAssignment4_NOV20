@@ -15,7 +15,11 @@ namespace KarateAssignment4.KarateInstructors
         protected void Page_Load(object sender, EventArgs e)
         {
             dbcon = new KarateDataContext(conn);
+           
             Label1.Text = HttpContext.Current.Session["memberFirst"].ToString() + " " + HttpContext.Current.Session["memberLast"].ToString();
+              
+            
+           
             if (Session.Count != 0)
             {
                 if (HttpContext.Current.Session["userType"].ToString().Trim() == "Member")
@@ -30,16 +34,29 @@ namespace KarateAssignment4.KarateInstructors
 
             }
 
-            Label2.Text = HttpContext.Current.Session["sectionName"].ToString();
-            var result = from x in dbcon.Members
-                         where x.Member_UserID == Convert.ToUInt32(HttpContext.Current.Session["sectionMemberID"].ToString())
-                         select new
-                         {
-                             x.MemberFirstName,
-                             x.MemberLastName
-                         };
-            GridView1.DataSource = result;
-            GridView1.DataBind();
+            if (HttpContext.Current.Session["sectionName"].ToString() != "")
+            {
+                Label2.Text = HttpContext.Current.Session["sectionName"].ToString();
+                var result = from x in dbcon.Members
+                             where x.Member_UserID == Convert.ToUInt32(HttpContext.Current.Session["sectionMemberID"].ToString())
+                             select new
+                             {
+                                 x.MemberFirstName,
+                                 x.MemberLastName
+                             };
+                GridView1.DataSource = result;
+                GridView1.DataBind();
+            }
+            else
+            {
+                Label2.Text = "No section";
+            }
+            
+            
+             
+            
+            
+            
 
 
 
